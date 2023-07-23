@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="src/style/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="src/assets/icon/logo.svg" />
+    <title>E-Scooter | Login</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-login">
+        <div class="login-content">
+          <a href="index.html"><div class="logo-login">
+            <img src="src/assets/icon/logo.svg" alt="" />
+            <h1>E-Scooter</h1>
+          </div></a>
+          <div class="login-wrap">
+            <div class="left-login">
+              <div class="login-title">
+                <h1>Login</h1>
+                <p>Doesn't have an account yet? <a href="register.html">Sign Up</a></p>
+              </div>
+              <div class="input-login">
+                <div class="email-login">
+                  <p>Email Address</p>
+                  <input type="text" placeholder="you@example.com" />
+                </div>
+                <div class="password-login">
+                  <p>Password</p>
+                  <div class="input-password">
+                    <input
+                    type="password"
+                    placeholder="Enter 6 character or more" id="passwordInputs"
+                  />
+                  <img src="src/assets/icon/eye.svg" alt="" class="eye">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="remember">
+                <div class="check">
+                  <input type="checkbox">
+                  <p>Remember me</p>
+                </div>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="btn-login">Login</div>
+              <div class="or">or login with</div>
+              <div class="btn-sosmed-login">
+                <div class="btn-google">
+                  <img src="src/assets/icon/icons8-google.svg" alt="">
+                  <p>Google</p>
+                </div>
+                <div class="btn-fb">
+                  <img src="src/assets/icon/icons8-facebook.svg" alt="">
+                  <p>Facebook</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-login">
+              <img src="src/assets/image/Fingerprint-bro.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/js/login.js"></script>
+  </body>
+</html>

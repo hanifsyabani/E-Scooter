@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*,
+html,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg-primary : #42454A;
+  --bg-white: white;
+  --font-primary : 'Ubuntu', sans-serif;
+}
+
+
+.container-login{
+  /* background-image: url(bg.jpg); */
+  padding: 2rem 5%;
+  overflow: hidden;
+}
+
+.login-content{
+  font-family: var(--font-primary);
+  position: relative;
+}
+
+.login-content .logo-login{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-login img{
+  width: 3rem;
+}
+
+.logo-login h1{
+  color: var(--bg-primary);
+}
+
+.login-content .login-wrap{
+  display: flex;
+  gap: 4rem;
+}
+
+.login-wrap .left-login{
+  width: 100%;
+  /* background-color: #42454A; */
+}
+
+.login-wrap .left-login .login-title{
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.login-title p{
+  color: #8f8f8f;
+  font-size: .9rem;
+}
+
+.login-title p a{
+  color: blue;
+}
+
+.input-login .email-login{
+  margin: 1rem 0;
+}
+
+.email-login p{
+  color: var(--bg-primary);
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+.email-login input, .input-password input{
+  padding: .8rem;
+  width: 30rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-login .password-login{
+  margin-bottom: 1rem;
+}
+
+.password-login p{
+  color: var(--bg-primary);
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+.password-login .input-password{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.input-password img{
+  position: absolute;
+  left: 38%;
+  padding: .4rem;
+  cursor: pointer;
+}
+
+.remember{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15rem;
+}
+
+.remember .check{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.check p{
+  font-size: .9rem;
+  color: #42454A;
+}
+
+.remember a{
+  font-size: .9rem;
+  color: blue;
+}
+
+.left-login .btn-login{
+  background-color: #42454A;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 10rem;
+  border: 1px solid var(--bg-primary);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.btn-login:hover{
+  background-color: white;
+  color: var(--bg-primary);
+}
+
+.left-login .or{
+  color: #8f8f8f;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 6.5rem;
+}
+
+.or::before{
+  content: '';
+  display: flex;
+  width: 5rem;
+  height: .1rem;
+  background-color: #8f8f8f;
+}
+
+.or::after{
+  content: '';
+  display: flex;
+  width: 5rem;
+  height: .1rem;
+  background-color: #8f8f8f;
+}
+
+.left-login .btn-sosmed-login{
+  margin-top: 2rem;
+  display: flex;
+  margin: 0 6rem;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.btn-sosmed-login .btn-google{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  border: 1px solid tomato;
+  width: 8.5rem;
+  border-radius: 2rem;
+  padding: .7rem;
+  cursor: pointer;
+  color: tomato;
+  transition: .2s linear;
+}
+
+.btn-google:hover{
+  background-color: tomato;
+  color: white;
+}
+
+.btn-google img , .btn-fb img{
+  width: 2rem;
+}
+
+.btn-sosmed-login .btn-fb{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: .1rem;
+  border: 1px solid rgb(91, 98, 237);
+  width: 8.5rem;
+  border-radius: 2rem;
+  padding: .7rem;
+  color: rgb(91, 98, 237);
+  cursor: pointer;
+}
+
+.btn-fb:hover{
+  background-color: rgb(91, 98, 237);
+  color: white;
+}
+
+.login-wrap .right-login{
+  position: absolute;
+  right: 0;
+  top: -2rem;
+}
+
+.right-login img{
+  width: 37rem;
+}
+
+@media (max-width:450px) {
+  .container-login .login-content{
+    /* flex-direction: column; */
+    /* text-align: center; */
+  }
+
+  .left-login .login-title{
+    text-align: center;
+  }
+
+  .input-login{
+    /* background-color: #42454A; */
+  }
+
+  .input-login .email-login input, .password-login input{
+    width: 100%;
+  }
+
+  .password-login .input-password img{
+    left: 19rem;
+  }
+
+  .remember{
+    gap: 7rem;
+  }
+
+  .left-login .btn-login{
+    margin: 1.5rem 6rem;
+  }
+
+  .left-login .or{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-login .btn-sosmed-login{
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .login-content .right-login{
+    display: none;
+  }
+}

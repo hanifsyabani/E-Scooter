@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*,
+html,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg-primary : #42454A;
+  --bg-white: white;
+  --font-primary : 'Ubuntu', sans-serif;
+}
+
+.container-regis{
+  padding: 1rem 5%;
+  background-image: url(Russia_2018_Away.jpg);
+}
+
+.container-regis .wrapper{
+  display: flex;
+}
+
+.wrapper .left{
+  width: 30rem;
+  padding-top: 5rem;
+}
+
+.left{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper .right{
+  background-color: rgb(216, 216, 216);
+  width: 35rem;
+  padding: 1rem;
+  margin-left: 7rem;
+  font-family: var(--font-primary);
+  border-radius: 1rem;
+  box-shadow:  5px 5px 10px #cccccc,
+             -5px -5px 10px #f4f4f4;
+}
+
+.right .right-title{
+  text-align: center;
+}
+
+.right-title h1{
+  color: var(--bg-primary);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.right .input-regis{
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.input-regis .name p, .email p, .password p{
+  font-size: .9rem;
+  color: #42454A;
+  margin-bottom: .5rem;
+}
+
+.name input, .email input, .wrap-pass input{
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: .7rem;
+  font-size: .9rem;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+}
+
+.password .wrap-pass{
+  display: flex;
+  position: relative;
+}
+
+.wrap-pass img{
+  position: absolute;
+  right: 1rem;
+  width: 1.3rem;
+  top: .6rem;
+  cursor: pointer;
+}
+
+.btn-create h3{
+  background-color: #42454A;
+  padding: .8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 10rem;
+  color: white;
+  font-size: .9rem;
+  text-align: center;
+  margin: 0 auto;
+  transition: .3s all;
+}
+
+.btn-create h3:hover{
+  transform: scaleY(1.1);
+}
+
+.btn-create p{
+  padding-top: .5rem;
+  font-size: .9rem;
+  color: var(--bg-primary);
+  text-align: center;
+}
+
+.btn-create p a{
+  color: blue;
+}
+
+.right .or{
+  color: #8f8f8f;
+  display: flex;
+  align-items: center;
+  margin: 1rem 9rem;
+  font-size: .9rem;
+}
+
+.or::before{
+  content: '';
+  display: flex;
+  width: 4rem;
+  height: .1rem;
+  background-color: #8f8f8f;
+}
+
+.or::after{
+  content: '';
+  display: flex;
+  width: 4rem;
+  height: .1rem;
+  background-color: #8f8f8f;
+}
+
+.right .signup-with{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.signup-with .btn-google, .btn-github{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid var(--bg-primary);
+  border-radius: .5rem;
+  padding: .2rem;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.btn-google:hover, .btn-github:hover{
+  transform: scaleX(1.05);
+}
+
+.btn-google img, .btn-github img{
+  width: 2rem;
+}
+
+.btn-google p, .btn-github p{
+  font-size: .9rem;
+  color: var(--bg-primary);
+}
+
+.right .credit{
+  color: var(--bg-primary);
+  font-size: .9rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+@media (max-width:450px) {
+
+  .container-regis .wrapper{
+    display: block;
+  }
+  .wrapper .left{
+    /* display: none; */
+    padding-top: 1rem;
+    width: 15rem;
+    margin: auto;
+  }
+
+  .wrapper .right{
+    margin: 0;
+    width: 100%;
+  }
+
+  .right .or{
+    margin: 2rem 0;
+    justify-content: center;
+  }
+
+  .right .signup-with{
+    gap: 1rem;
+  }
+
+  .btn-google,.btn-github{
+    width: 8rem;
+  }
+
+  .btn-google img, .btn-github img{
+    width: 1.5rem;
+  }
+
+
+  .btn-google p, .btn-github p{
+    font-size: .8rem;
+  }
+}
